@@ -1,0 +1,50 @@
+﻿@model projectGetUser.Models.GetInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+    <meta name="viewport" content="width=device=width" />
+    <title>Input Some Information</title>
+</head>
+<body>
+
+    
+        <div>
+
+            <h1>
+                Please Enter Your First Name, Last Name and Age.
+            </h1>
+
+            <h2>First Name :  @Model.firstName</h2>
+            <h3>Last Name : @Model.lastName</h3>
+            <h4>Age : @Model.age</h4>
+            
+        </div>
+        <form action="getUserFactObj" method="post">
+
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="First Name" />
+            <br />
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name" />
+            <br />
+            <label>Age</label>
+            <input type="text" name="age" placeholder="Age" />
+            <br />
+            <input type="submit" value="Save" />
+
+        </form>
+
+</body>
+
+</html>
+<
